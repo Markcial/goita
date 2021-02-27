@@ -28,3 +28,6 @@ go run main.go
 ```
 
 A webview window will appear and there you can start querying for the system platform or the username that started the application.
+
+![example](https://user-images.githubusercontent.com/208523/109386098-c1963000-78f8-11eb-84c2-7a204b1eb031.gif)
+
