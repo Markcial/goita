@@ -7,7 +7,8 @@ import (
 	dom "honnef.co/go/js/dom/v2"
 )
 
-//go:generate cp $GOROOT/misc/wasm/wasm_exec.js ../storage/wasm_exec.js
+// Go 1.24 moved wasm_exec.js from $GOROOT/misc/wasm to $GOROOT/lib/wasm.
+//go:generate sh copy_wasm_exec.sh
 //go:generate env GOOS=js GOARCH=wasm go build -o ../storage/main.wasm ./
 
 var (
